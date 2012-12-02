@@ -2,8 +2,11 @@ var currentPage = '';
 
 $(document).ready(function(){
 	changePage('home');
+	$('nav a:eq(0)').addClass('selected');
 	$('nav a').bind('touchstart',function(){
 		changePage($(this).attr('data-page'));
+		$('nav a').removeClass('selected');
+		$(this).addClass('selected');
 	});
 });
 
