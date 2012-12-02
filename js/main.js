@@ -12,7 +12,7 @@ $(document).ready(function(){
 	});
   $('#loginbtn').live('touchstart',function(){
     console.log('touch');
-    api.authUser();
+    authUser();
   });
 });
 
