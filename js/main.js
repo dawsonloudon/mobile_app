@@ -1,3 +1,4 @@
+var apiurl = 'http://ediblereno.sterlinghamilton.com';
 var currentPage = '';
 
 $(document).ready(function(){
