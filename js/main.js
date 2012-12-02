@@ -4,7 +4,7 @@ var currentPage = '';
 var contentScroller;
 
 $(document).ready(function(){
-	contentScroller = new iScroll('scroller');
+	// contentScroller = new iScroll('scroller');
 	changePage('home');
 	$('nav a:eq(0)').addClass('selected');
 	$('nav a').bind('touchstart',function(){
