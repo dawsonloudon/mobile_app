@@ -53,7 +53,7 @@
 						});
       					}
     				});
-    			    	$('#loginpassword').focus(function(){
+    			    	/*$('#loginpassword').focus(function(){
      	 				if($(this).val() == 'password'){
         					$(this).val('');
         					$(this).blur(function(){
@@ -62,7 +62,7 @@
           						}
         					});
       					}
-    			    	});
+    			    	});*/
 			    }
 			    else if(page == 'signupform'){
 			    	$('#signupusername').focus(function(){
@@ -95,7 +95,7 @@
 						});
       					}
     				});
-			    	$('#password').focus(function(){
+			    	/*$('#password').focus(function(){
 					if($(this).val() == 'Enter Your Password'){
 						$(this).val('');
 						$(this).blur(function(){
@@ -114,7 +114,7 @@
 							}
 						});
       					}
-    				});
+    				});*/
 			    }
           else if(page == 'maps'){
             relocate();
