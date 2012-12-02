@@ -1,6 +1,5 @@
-document.addEventListener("deviceready", onDeviceReady, false);
   function onLoad() {
-    
+    document.addEventListener("deviceready", onDeviceReady, false);
   }
 
   var platform = '';
@@ -13,12 +12,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
   var user = null;
   var types = null;
 
-  function timeout_trigger(){
-    console.log('readyagain');
-  }
-
   function onDeviceReady(){
-    setTimeout('timeout_trigger()', 5000);
+    console.log('onDeviceReady()');
+    platform = device.platform;
+    checkConnection();
   }
 
   $(document).ready(function(){
@@ -130,7 +127,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
   }
 
   function checkUser(){
-    console.log('checkUser');
+    console.log('checkUser()');
     user = storage.getItem('user');
     if(!user){
       changePage('home');
@@ -141,7 +138,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
   }
 
   function noConnection(){
-    console.log('noConnection');
+    console.log('noConnection()');
     $('#loginform').css({'display':'none'});
     $('#noconnection').css({'display':'block'});
     changePage('home');
