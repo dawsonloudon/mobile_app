@@ -9,8 +9,8 @@
   var map = false;
   var markers = [];
   var storage = window.localStorage;
-  var user = storage.getItem('user');
-  var types = storage.getItem('types');
+  var user = null;
+  var types = null;
 
   function onDeviceReady(){
     platform = device.platform;
@@ -122,6 +122,7 @@
   }
 
   function checkUser(){
+    user = storage.getItem('user');
     if(!user){
       changePage('home');
     }
