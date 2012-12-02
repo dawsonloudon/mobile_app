@@ -22,14 +22,8 @@
     $('.nav').live('touchstart',function(){
       changePage($(this).attr('data-page'));
     });
-    $('#loginbtn').live('touchstart',function(){
-      authUser();
-    });
     $('#signupbtn').live('touchstart',function(){
       createUser();
-    });
-    $('#gettypesbtn').live('touchstart',function(){
-      getTypes();
     });
   });
 
@@ -42,7 +36,10 @@
 			  currentPage = page;
 			  $('div.content_container').html($('#'+page).html()).addClass(page);
 			  $('.content_container').delay(250).animate({opacity:1},500,function(){
-			    if(page == 'home'){	  
+			    if(page == 'home'){
+    $('#loginbtn').live('touchstart',function(){
+      authUser();
+    });
 			    	$('#loginusername').focus(function(){
 					if($(this).val() == 'username'){
 						$(this).val('');
@@ -65,6 +62,9 @@
     			    	});*/
 			    }
 			    else if(page == 'signupform'){
+    $('#signupbtn').live('touchstart',function(){
+      createUser();
+    });
 			    	$('#signupusername').focus(function(){
 					if($(this).val() == 'Enter A Username'){
 						$(this).val('');
