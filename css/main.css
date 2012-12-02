@@ -108,7 +108,7 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 #listitems .item .stuff .top .title { font-weight: bold; float: left; }
 #listitems .item .stuff .top .distance { float: right; }
 #listitems .item .stuff .bottom { width: 100%; height: auto; }
-#listitems .item .stuff .bottom .desc { width: auto; height: auto; float: left; }
+#listitems .item .stuff .bottom .desc { width: 175px; height: auto; float: left; }
 #listitems .item .stuff .bottom .more {  font-size: 20px; width: 20px; height: auto; float: right; }
 
 /* ==========================================================================
