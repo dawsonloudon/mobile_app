@@ -84,7 +84,7 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 #map .header .header_bottom { width: 100%; height: 98px; background-color: #FEC78B; }
 #map .header .header_bottom .search { float: left; width: 40%; }
 #map .header .header_bottom .list_button { float: left; display: block; width: 50px; height: 35px; margin: 5px 5px 0 0; background: transparent url('../img/buttons/list.png') 0 0 no-repeat; }
-#map .header .header_bottom .map_button { float: left; display: block; width: 51px; height: 35px; marign: 5px 0 0; background: transparent url('../img/buttons/map.png') 0 0 no-repeat; }
+#map .header .header_bottom .map_button { float: left; display: block; width: 51px; height: 35px; margin: 5px 0 0; background: transparent url('../img/buttons/map.png') 0 0 no-repeat; }
 #map .header .header_bottom .photo_button { display: block; width: 280px; height: 35px; margin: 0 auto;  background: transparent url('../img/buttons/submit-your-photo.png') 0 0 no-repeat; }
 #map_canvas { height: 100%; width: 100%; }
 
