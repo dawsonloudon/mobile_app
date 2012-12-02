@@ -114,6 +114,9 @@
       					}
     				});
 			    }
+          else if(page == 'maps'){
+            relocate();
+          }
 			    contentScroller = null;
 			    contentScroller = new iScroll('scroller');
 			  });
