@@ -44,5 +44,5 @@
   }
 
   function loadPoints(){
-    //console.log(map.getBounds());
+    console.log(map.getBounds());
   }
