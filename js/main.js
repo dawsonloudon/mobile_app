@@ -15,7 +15,7 @@ function changePage(page){
 	if(currentPage != page) {
 		$('.content_container').animate({opacity:0},500,function(){
 			currentPage = page;
-			$('.content_loading_container').html($('#'+page);
+			$('.content_loading_container').html($('#'+page).html());
 			$('.content_container').delay(250).animate({opacity:1},500);
 		});
 	}
