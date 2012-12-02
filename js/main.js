@@ -11,6 +11,7 @@ $(document).ready(function(){
 		$(this).addClass('selected');
 	});
   $('#loginbtn').live('touchstart',function(){
+    console.log('touch');
     api.authUser();
   });
 });
