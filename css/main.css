@@ -60,19 +60,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+header { display: block; position: absolute; top: 0; left: 0; height: 20px; background-color: #000; }
+article { display: block; position: absolute; top: 20px; left: 0; background-color: #FFF; }
+article .content_container { position: absolute; top: 0; left: 0; }
+article .content_container .content_loading_container { position: absolute; top: 0; }
+footer { display: block; position: absolute; bottom: 0; left: 0; height: 30px; background-color: #000; }
+nav { position: absolute; bottom: 0; left: 0; }
 
 /* ==========================================================================
    Media Queries
