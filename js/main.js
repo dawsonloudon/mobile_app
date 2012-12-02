@@ -26,7 +26,7 @@
   function changePage(page){
     console.log(page);
     if(currentPage != page){
-      $(currentPage).animate({opacity:0},500,function(){
+      $('#'+currentPage).animate({opacity:0},500,function(){
         currentPage = page;
         $('#'+page).delay(250).animate({opacity:1},500,function(){
           if(page == 'home'){
