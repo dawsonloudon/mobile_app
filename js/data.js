@@ -7,7 +7,7 @@
       success: function(data){
         console.log(data);
         storage.setItem('user',data);
-        changePage('maps');
+        changePage('map');
       },
       dataType: 'JSON'
     });
@@ -22,7 +22,7 @@
       success: function(data){
         console.log(data);
         storage.setItem('user',data);
-        changePage('maps');
+        changePage('map');
       },
       dataType: 'JSON'
     });

@@ -34,8 +34,7 @@
         $('.content_container').delay(250).animate({opacity:1},500,function(){
           if(page == 'home'){
             $('#loginbtn').live('touchstart',function(){
-              //authUser();
-              changePage('maps');
+              authUser();
             });
             $('#loginusername').focus(function(){
               if($(this).val() == 'username'){
@@ -50,8 +49,7 @@
           }
           else if(page == 'signupform'){
             $('#signupbtn').live('touchstart',function(){
-              //createUser();
-              changePage('maps');
+              createUser();
             });
             $('#signupusername').focus(function(){
               if($(this).val() == 'Enter A Username'){
@@ -84,7 +82,7 @@
               }
             });
           }
-          else if(page == 'maps'){
+          else if(page == 'map'){
             relocate();
           }
         });
@@ -98,7 +96,7 @@
       changePage('home');
     }
     else{
-      changePage('maps');
+      changePage('map');
     }
   }
 
