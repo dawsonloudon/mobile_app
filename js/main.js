@@ -27,6 +27,7 @@
   });
 
   function changePage(page){
+    console.log(page);
     if(currentPage != page){
       $('.content_container').animate({opacity:0},500,function(){
         $('#'+currentPage).html($('.content_container').html());
