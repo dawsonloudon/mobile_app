@@ -119,8 +119,8 @@
           else if(page == 'maps'){
             relocate();
           }
-			    contentScroller = null;
-			    contentScroller = new iScroll('scroller');
+			    // contentScroller = null;
+			    // contentScroller = new iScroll('scroller');
 			  });
 		  });
 	  }

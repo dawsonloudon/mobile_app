@@ -64,12 +64,12 @@ textarea {
 header { display: none; position: fixed; top: 0; left: 0; width: 320px; height: 63px; background: #FBF0A6 url('../img/logo-list.png') 19px 0 no-repeat; }
 article { display: block; position: relative; width: 320px; height: 100%; background-color: #FFF; color: #000; }
 article .content_container { position: relative; width: 100%; }
-input { border: 1px solid #972C02; color: #972C02; font: 18px/34px Arial, Helvetica, sans-serif; padding: 6px 17px; }
+input { border: 1px solid #972C02; color: #972C02; font: 18px/34px Arial, Helvetica, sans-serif; margin: 0 auto; padding: 6px 17px; }
 
 #noconnection { display: none; }
-#loginbtn { background: transparent url('../img/buttons/submit.png') 0 0 no-repeat; padding: 6px 17px; }
-#createbtn { background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; padding: 6px 17px; }
-#signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; padding: 6px 17px; }
+#loginbtn { background: transparent url('../img/buttons/submit.png') 0 0 no-repeat; margin: 0 auto; padding: 6px 17px; width: 308px; }
+#createbtn { background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; margin: 0 auto; padding: 6px 17px; width: 308px; }
+#signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; margin: 0 auto; padding: 6px 17px; width: 308px; }
 
 .page { display: none; }
 
