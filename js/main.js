@@ -43,7 +43,7 @@
 			  $('.content_container').html($('#'+page).html()).addClass(page);
 			  $('.content_container').delay(250).animate({opacity:1},500,function(){
 			    if(page == 'home'){	  
-			    	$('#loginusername').live('touchstart',function(){
+			    	$('#loginusername').focus(function(){
 					if($(this).value() == 'username'){
 						$(this).value('');
 						$(this).blur(function(){
@@ -52,8 +52,8 @@
 							}
 						});
       					}
-    				    });
-    			    	$('#loginpassword').live('touchstart',function(){
+    				});
+    			    	$('#loginpassword').focus(function(){
      	 				if($(this).value() == 'password'){
         					$(this).value('');
         					$(this).blur(function(){
@@ -65,7 +65,7 @@
     			    	});
 			    }
 			    else if(page == 'signupform'){
-			    	$('#signupusername').live('touchstart',function(){
+			    	$('#signupusername').focus(function(){
 					if($(this).value() == 'Enter A Username'){
 						$(this).value('');
 						$(this).blur(function(){
@@ -75,7 +75,7 @@
 						});
       					}
     				});
-			    	$('#signupemail1').live('touchstart',function(){
+			    	$('#signupemail1').focus(function(){
 					if($(this).value() == 'Enter Your Email'){
 						$(this).value('');
 						$(this).blur(function(){
@@ -85,7 +85,7 @@
 						});
       					}
     				});
-			    	$('#signupemail2').live('touchstart',function(){
+			    	$('#signupemail2').focus(function(){
 					if($(this).value() == 'Confirm Your Email'){
 						$(this).value('');
 						$(this).blur(function(){
@@ -95,7 +95,7 @@
 						});
       					}
     				});
-			    	$('#password').live('touchstart',function(){
+			    	$('#password').focus(function(){
 					if($(this).value() == 'Enter Your Password'){
 						$(this).value('');
 						$(this).blur(function(){
@@ -105,7 +105,7 @@
 						});
       					}
     				});
-			    	$('#password2').live('touchstart',function(){
+			    	$('#password2').focus(function(){
 					if($(this).value() == 'Confirm Your Password'){
 						$(this).value('');
 						$(this).blur(function(){
