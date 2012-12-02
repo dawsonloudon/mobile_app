@@ -65,10 +65,6 @@ html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
 .padd157 { width: 100%; height: 157px; }
 .padd167 { width: 100%; height: 167px; }
 
-#content_wrapper { display: block; position: relative; width: 100%; height: 100%; }
-header { display: none; position: fixed; top: 0; left: 0; width: 320px; height: 63px; background: #FBF0A6 url('../img/logo-list.png') 19px 0 no-repeat; }
-article { display: block; position: relative; width: 320px; height: 100%; background-color: #FFF; color: #000; }
-article .content_container { position: relative; width: 100%; }
 input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvetica, sans-serif; margin: 6px 17px; width: 100%; height: 33px; }
 
 #noconnection { display: none; }
@@ -76,10 +72,10 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 #createbtn { display: block; background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; border: 0; margin: 6px 17px; width: 308px; height: 35px; }
 #signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; border: 0; margin: 6px 17px; width: 308px; height: 35px; }
 
-.page { display: none; }
+.page { position: relative; display: none; opacity: 0; }
 
-/* .content_container.home, .content_container.signupform { background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; } */
-#home, #signupform { background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
+#home { width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
+#signupform { width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
 
 #map_canvas { height: 100%; width: 100%; }
 
@@ -103,11 +99,10 @@ only screen and (-o-min-device-pixel-ratio: 1),
 only screen and (min--moz-device-pixel-ratio: 1.0),
 only screen and (min-device-pixel-ratio: 1.0) {
   /* Styles */
-  header { background-size: 268px 37px; }
   #loginbtn { background-size: 280px 35px; }
   #createbtn { background-size: 280px 35px; }
   #signupbtn { background-size: 280px 35px; }
-  .content_container.home, .content_container.signupform { background-size: 195px 90px; }
+  #home, #signupform { background-size: 195px 90px; }
 
 }
 
