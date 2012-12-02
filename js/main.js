@@ -20,11 +20,12 @@ $(document).ready(function(){
 function changePage(page){
 	if(currentPage != page) {
 		$('.content_container').animate({opacity:0},500,function(){
+			$('#'+currentPage).html($('.content_container').html());
 			currentPage = page;
 			$('.content_container').html($('#'+page).html());
 			$('.content_container').delay(250).animate({opacity:1},500,function(){
-				contentScroller = null;
-				contentScroller = new iScroll('scroller');
+				// contentScroller = null;
+				// contentScroller = new iScroll('scroller');
 			});
 		});
 	}
