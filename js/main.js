@@ -25,7 +25,27 @@
 
   function changePage(page){
     console.log(page);
-    if(currentPage != page){
+    if(currentPage == ''){
+        currentPage = page;
+	$('#'+page).delay(250).animate({opacity:1},500,function(){
+          if(page == 'home'){
+            $('#loginbtn').live('touchstart',function(){
+              authUser();
+            });
+            $('#loginusername').focus(function(){
+              if($(this).val() == 'username'){
+                $(this).val('');
+                $(this).blur(function(){
+                  if($(this).val() == ''){
+                    $(this).val('username');
+                  }
+                });
+              }
+            });
+          }
+        });
+    }
+    else if(currentPage != page){
       $('#'+currentPage).animate({opacity:0},500,function(){
         currentPage = page;
         $('#'+page).delay(250).animate({opacity:1},500,function(){
