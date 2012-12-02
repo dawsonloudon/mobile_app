@@ -114,7 +114,7 @@
       changePage('home');
     }
     else{
-      changePage('map');
+      changePage('list');
     }
   }
 
