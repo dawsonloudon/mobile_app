@@ -35,7 +35,7 @@ function initializeMap(state){
     optimized: 0//,
     //icon: myIcon
   });*/
-  //loadPoints();
+  loadPoints();
   /*if(state){
     if(constate)checkLocationData();
   }*/
