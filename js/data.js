@@ -3,7 +3,7 @@
     $.ajax({
       type:'POST',
       url: uri,
-      data: $('#registerform').serialize(),
+      data: $('#signupform').serialize(),
       success: function(data){
         console.log(data)
       },
