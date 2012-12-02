@@ -13,62 +13,52 @@
     <body>
 
 	<div id="content_wrapper">
-		<footer></footer>
 		<article>
 			<div id="scroller" class="content_container"></div>
 		</article>
-		<header>
-			<h1>Edible Reno</h1>
-		</header>
-		<nav>
-			<a data-page="home">Home</a>
-			<a data-page="map">Map</a>
-			<a data-page="list">List</a>
-			<a data-page="login">Login</a>
-			<a data-page="user">User</a>
-		</nav>
+		<header></header>
 	</div>
 	
 	<div id="home" class="page">
-    <div><input type="button" name="gettypesbtn" id="gettypesbtn" value="Login" /></div>
-		Home
-    <br />
-    login
-    <br />
     <form name="login" id="loginform">
       <div>
-        User Name: <input type="text" name="username" id="loginusername" value="" />
+        <input type="text" name="username" id="loginusername" value="username" />
       </div>
       <div>
-        Password: <input type="password" name="password" id="loginpassword" value="" />
+        <input type="password" name="password" id="loginpassword" value="password" />
       </div>
       <div>
-        <input type="button" name="loginbtn" id="loginbtn" value="Login" />
+        <input type="button" name="loginbtn" id="loginbtn" value="" />
+      </div>
+      <div>
+        <a id="createbtn" class="nav" data-page="signupform"></a>
       </div>
     </form>
-    sign up
-    <br />
-    <form name="signup" id="signupform">
-      <div>
-        User Name: <input type="text" name="username" id="signupusername" value="" />
-      </div>
-      <div>
-        Email Address: <input type="text" name="email" id="signupemail1" value="" />
-      </div>
-      <div>
-        Verify Email Address: <input type="text" name="email2" id="signupemail2" value="" />
-      </div>
-      <div>
-        Password: <input type="password" name="password" id="signuppassword1" value="" />
-      </div>
-      <div>
-        Verify Password: <input type="password" name="password2" id="signuppassword2" value="" />
-      </div>
-      <div>
-        <input type="button" name="signupbtn" id="signupbtn" value="Sign Up" />
-      </div>
-    </form>
+    <h2 id="noconnection">This app requires an internet connection</h2>
 	</div>
+
+        <div id="signupform" class="page">
+    <form name="signup">
+      <div>
+        <input type="text" name="username" id="signupusername" value="Enter A Username" />
+      </div>
+      <div>
+        <input type="text" name="email" id="signupemail1" value="Enter Your Email" />
+      </div>
+      <div>
+        <input type="text" name="email2" id="signupemail2" value="Confirm Your Email" />
+      </div>
+      <div>
+        <input type="password" name="password" id="signuppassword1" value="Enter Your Password" />
+      </div>
+      <div>
+        <input type="password" name="password2" id="signuppassword2" value="Confirm Your Password" />
+      </div>
+      <div>
+        <input type="button" name="signupbtn" id="signupbtn" value="" />
+      </div>
+    </form>
+        </div>
 
 	<div id="map" class="page">
 		Map
@@ -77,14 +67,6 @@
 
 	<div id="list" class="page">
 		List
-	</div>
-
-	<div id="login" class="page">
-		Login
-	</div>
-
-	<div id="user" class="page">
-		User
 	</div>
 
         <script src="js/vendor/jquery-1.8.3.min.js"></script>

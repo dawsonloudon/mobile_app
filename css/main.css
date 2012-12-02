@@ -61,15 +61,19 @@ textarea {
    ========================================================================== */
 
 #content_wrapper { display: block; position: relative; width: 100%; height: 100%; }
-header { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100px; background-color: #000; color: #FFF; text-align: center; }
+header { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 126px; background: #FBF0A6 url('../img/logo-list.png') 39px 0 no-repeat; }
 article { display: block; position: relative; top: 150px; width: 100%; height: 100%; background-color: #FFF; color: #000; }
 article .content_container { position: relative; width: 100%; }
-footer { display: block; position: fixed; top: 100px; left: 0; width: 100%; height: 50px; background-color: #000; z-index: 9999; }
-nav { position: fixed; top: 100px; left: 0; height: 50px; z-index: 9999; }
-nav a { color: #FFF; font-size: 18px; font-style: Arial, Helvetica, sans-serif; font-weight: normal; line-height: 50px; padding: 0 10px; }
-nav a.selected { font-weight: bold; }
+input { border: 1px solid #972C02; color: #972C02; font: 36px/68px Arial, Helvetica, sans-serif; padding: 13px 35px; }
 
-#home, #map, #list, #login, #user { display: none; }
+#noconnection { display: none; }
+#loginbtn { background: transparent url('../img/buttons/submit.png') 0 0 no-repeat; padding: 13px 35px; }
+#createbtn { background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; padding: 13px 35px; }
+#signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; padding: 13px 35px; }
+
+.page { display: none; }
+
+.content_container.home, .content_container.signupform { background: #FBF0A6 url('../img/logo-home.png') 105px 0 no-repeat; }
 
 /* ==========================================================================
    Media Queries
