@@ -1,4 +1,5 @@
 function initializeMap(state){
+  console.log('initmap');
   var latlng = new google.maps.LatLng(storage.getItem('lat'),storage.getItem('lng'));
   var myAndroidOptions = {
     zoom: 12,
@@ -16,23 +17,25 @@ function initializeMap(state){
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   if(platform == 'Android'){
+    console.log('andy');
     map = new google.maps.Map(document.getElementById("map_canvas"), myAndroidOptions);
   }
   else{
+    console.log('other');
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
   }
-  var myIcon = new google.maps.MarkerImage("img/locations/markers/you.png", null, null, null, new google.maps.Size(58,58));
+  //var myIcon = new google.maps.MarkerImage("img/locations/markers/you.png", null, null, null, new google.maps.Size(58,58));
   base = new google.maps.Marker({
     position: latlng,
     map: map,
     title:'You are here!',
     zIndex: 1,
-    optimized: 0,
-    icon: myIcon
+    optimized: 0//,
+    //icon: myIcon
   });
-  if(state){
+  /*if(state){
     if(constate)checkLocationData();
-  }
+  }*/
 }
 
 function relocate(state){
