@@ -65,8 +65,8 @@ html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
 .padd157 { width: 100%; height: 157px; }
 .padd167 { width: 100%; height: 167px; }
 
-label { margin: 0 25px; color: #972C02; }
-input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvetica, sans-serif; margin: 6px 17px; width: 80%; height: 33px; }
+label { margin: 0 27px; color: #972C02; }
+input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvetica, sans-serif; margin: 6px 17px; width: 81%; height: 33px; }
 
 #noconnection { display: none; }
 #loginbtn { background: transparent url('../img/buttons/submit.png') 0 0 no-repeat; border: 0; margin: 6px 17px; width: 308px; height: 35px; }
