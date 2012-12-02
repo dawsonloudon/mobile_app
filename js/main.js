@@ -1,8 +1,10 @@
 var api = null;
 var apiurl = 'http://ediblereno.sterlinghamilton.com';
 var currentPage = '';
+var contentScroller;
 
 $(document).ready(function(){
+	contentScroller = new iScroll('scroller');
 	changePage('home');
 	$('nav a:eq(0)').addClass('selected');
 	$('nav a').bind('touchstart',function(){
