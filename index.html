@@ -67,13 +67,38 @@
         </div>
 
 	<div id="map" class="page">
-		Map
+	  <div class="header">
+            <div class="header_logo"></div>
+            <div class="header_bottom">
+              <input type="text" name="search" id="search" />
+              <a class="nav list_button" data-page="list"></a>
+              <a class="nav map_button" data-page="map"></a>
+              <a class="nav photo_button" data-page="camera"></a>
+            </div>
+          </div>
     <div id="map_canvas"></div>
 	</div>
 
 	<div id="list" class="page">
-		List
+	  <div class="header">
+            <div class="header_logo"></div>
+            <div class="header_bottom">
+              <input type="text" name="search" id="search" />
+              <a class="nav list_button" data-page="list"></a>
+              <a class="nav map_button" data-page="map"></a>
+              <a class="nav photo_button" data-page="camera"></a>
+            </div>
+          </div>
+          <div id="scroller">
+          </div>
+          <div class="footer">
+            <div id="load_more_button"></div>
+          </div>
 	</div>
+
+	<div id="camera" class="page">
+	  Camera
+        </div>
 
         <script src="js/vendor/jquery-1.8.3.min.js"></script>
         <script src="js/vendor/iscroll-lite.js"></script>
