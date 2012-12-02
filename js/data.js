@@ -1,4 +1,5 @@
   function createUser(){
+    console.log('createUser()');
     var uri = apiurl+'/wp-admin/admin-ajax.php?action=register';
     $.ajax({
       type:'POST',
@@ -13,6 +14,7 @@
   }
 
   function authUser(){
+    console.log('authUser()');
     var uri = apiurl+'/wp-admin/admin-ajax.php?action=login';
     $.ajax({
       type:'POST',
@@ -27,6 +29,7 @@
   }
 
   function getTypes(){
+    console.log('getTypes()');
     var uri = apiurl+'/wp-admin/admin-ajax.php?action=get_types';
     $.ajax({
       type:'GET',
