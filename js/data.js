@@ -42,3 +42,7 @@
       dataType: 'JSON'
     });
   }
+
+  function loadPoints(){
+    console.log(storage.getItem('lat')+' - '+storage.getItem('lng'));
+  }
