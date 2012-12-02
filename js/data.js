@@ -7,7 +7,7 @@
     }
 
     this.authUser = function(){
-      $.get(apiurl+'/wp-admin/admin-ajax.php?action=login',$('#signupform').serialize(),function(data){
+      $.post(apiurl+'/wp-admin/admin-ajax.php?action=login',$('#signupform').serialize(),function(data){
         alert(data);
       });
     }
