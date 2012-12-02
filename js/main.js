@@ -21,9 +21,6 @@
     $('.nav').live('touchstart',function(){
       changePage($(this).attr('data-page'));
     });
-    $('#signupbtn').live('touchstart',function(){
-      createUser();
-    });
   });
 
   function changePage(page){
@@ -37,7 +34,8 @@
         $('.content_container').delay(250).animate({opacity:1},500,function(){
           if(page == 'home'){
             $('#loginbtn').live('touchstart',function(){
-              authUser();
+              //authUser();
+              changePage('maps');
             });
             $('#loginusername').focus(function(){
               if($(this).val() == 'username'){
@@ -52,7 +50,8 @@
           }
           else if(page == 'signupform'){
             $('#signupbtn').live('touchstart',function(){
-              createUser();
+              //createUser();
+              changePage('maps');
             });
             $('#signupusername').focus(function(){
               if($(this).val() == 'Enter A Username'){
