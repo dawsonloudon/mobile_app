@@ -5,7 +5,7 @@
         version   	= "1.0"
 	versionCode 	= "17">
 
-    <name>EdibleReno</name>
+    <name>HarvestReno</name>
 
     <description>
 	An app to provide users the possibility to track or capture data and submit it to the repository of edible foods.
