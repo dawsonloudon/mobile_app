@@ -60,6 +60,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#content_wrapper { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 header { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100px; background-color: #000; color: #FFF; text-align: center; }
 article { display: block; position: absolute; top: 100px; left: 0; background-color: #FFF; color: #000; }
 article .content_container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0 50px; }
