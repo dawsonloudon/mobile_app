@@ -44,5 +44,5 @@
   }
 
   function loadPoints(){
-    console.log(storage.getItem('lat')+' - '+storage.getItem('lng'));
+    console.log(map.getBounds());
   }
