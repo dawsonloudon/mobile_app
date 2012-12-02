@@ -2,7 +2,7 @@ function initializeMap(state){
   console.log('initmap');
   var latlng = new google.maps.LatLng(storage.getItem('lat'),storage.getItem('lng'));
   console.log('latlng');
-  var myAndroidOptions = {
+  /*var myAndroidOptions = {
     zoom: 12,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -11,20 +11,20 @@ function initializeMap(state){
         style: google.maps.ZoomControlStyle.SMALL,
         position: google.maps.ControlPosition.LEFT_CENTER
     }
-  };
+  };*/
   var myOptions = {
     zoom: 12,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  if(platform == 'Android'){
+  /*if(platform == 'Android'){
     console.log('andy');
     map = new google.maps.Map(document.getElementById("map_canvas"), myAndroidOptions);
   }
   else{
-    console.log('other');
+    console.log('other');*/
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  }
+  //}
   console.log(map);
   //var myIcon = new google.maps.MarkerImage("img/locations/markers/you.png", null, null, null, new google.maps.Size(58,58));
   /*base = new google.maps.Marker({
@@ -35,7 +35,7 @@ function initializeMap(state){
     optimized: 0//,
     //icon: myIcon
   });*/
-  loadPoints();
+  //loadPoints();
   /*if(state){
     if(constate)checkLocationData();
   }*/
