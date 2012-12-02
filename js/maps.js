@@ -24,7 +24,6 @@ function initializeMap(state){
     console.log('other');
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
   }
-  console.log(map);
   //var myIcon = new google.maps.MarkerImage("img/locations/markers/you.png", null, null, null, new google.maps.Size(58,58));
   base = new google.maps.Marker({
     position: latlng,
