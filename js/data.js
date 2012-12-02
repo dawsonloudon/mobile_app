@@ -1,12 +1,13 @@
   function createUser(){
-    $.post(apiurl+'/wp-admin/admin-ajax.php?action=register',$('#loginform').serialize(),function(){
+    $.post(apiurl+'/wp-admin/admin-ajax.php?action=register',$('#signupform').serialize(),function(){
       alert(data);
     });
   }
 
   function authUser(){
-    console.log('inhere');
-    $.post(apiurl+'/wp-admin/admin-ajax.php?action=login',$('#signupform').serialize(),function(data){
+    var uri = apiurl+'/wp-admin/admin-ajax.php?action=login';
+    console.log(uri);
+    $.post(uri,$('#loginform').serialize(),function(data){
       console.log(data+' something');
     });
   }
