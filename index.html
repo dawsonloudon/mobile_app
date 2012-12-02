@@ -32,6 +32,42 @@
 	
 	<div id="home" class="page">
 		Home
+    <br />
+    login
+    <br />
+    <form name="login" id="loginform">
+      <div>
+        User Name: <input type="text" name="username" id="loginusername" value="" />
+      </div>
+      <div>
+        Password: <input type="password" name="password" id="loginpassword" value="" />
+      </div>
+      <div>
+        <input type="button" name="loginbtn" id="loginbtn" value="Login" onclick="javascript: api.authUser();" />
+      </div>
+    </form>
+    sign up
+    <br />
+    <form name="signup" id="signupform">
+      <div>
+        User Name: <input type="text" name="username" id="signupusername" value="" />
+      </div>
+      <div>
+        Email Address: <input type="text" name="email" id="signupemail1" value="" />
+      </div>
+      <div>
+        Verify Email Address: <input type="text" name="email2" id="signupemail2" value="" />
+      </div>
+      <div>
+        Password: <input type="password" name="password" id="signuppassword1" value="" />
+      </div>
+      <div>
+        Verify Password: <input type="password" name="password2" id="signuppassword2" value="" />
+      </div>
+      <div>
+        <input type="submit" name="signupbtn" id="signupbtn" value="Sign Up" />
+      </div>
+    </form>
 	</div>
 
 	<div id="map" class="page">
@@ -53,5 +89,6 @@
         <script src="js/vendor/jquery-1.8.3.min.js"></script>
         <script src="js/vendor/iscroll-lite.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/data.js"></script>
     </body>
 </html>
