@@ -73,7 +73,7 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 
 .page { display: none; }
 
-.content_container.home, .content_container.signupform { background: #FBF0A6 url('../img/logo-home.png') 0 52px no-repeat; height: 100%; }
+.content_container.home, .content_container.signupform { background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
 
 #map_canvas { height: 100%; width: 100%; }
 
