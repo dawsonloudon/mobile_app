@@ -8,6 +8,7 @@
     var uri = apiurl+'/wp-admin/admin-ajax.php?action=login';
     console.log(uri);
     $.post(uri,$('#loginform').serialize(),function(data){
-      console.log(data+' something');
+      console.log('afterpost');
+      console.log($.parseJSON(data));
     });
   }
