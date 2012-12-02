@@ -23,3 +23,16 @@
       dataType: 'JSON'
     });
   }
+
+  function getTypes(){
+    var uri = apiurl+'/wp-admin/admin-ajax.php?action=get_types';
+    $.ajax({
+      type:'GET',
+      url: uri,
+      data: false,
+      success: function(data){
+        console.log(data)
+      },
+      dataType: 'JSON'
+    });
+  }

@@ -19,6 +19,9 @@
     $('#signupbtn').live('touchstart',function(){
       createUser();
     });
+    $('#gettypesbtn').live('touchstart',function(){
+      getTypes();
+    });
   });
 
   function changePage(page){
