@@ -41,6 +41,9 @@
 		  $('.content_container').animate({opacity:0},500,function(){
 			  currentPage = page;
 			  $('.content_container').html($('#'+page).html());
+        if(page = 'maps'){
+          relocate();
+        }
 			  $('.content_container').delay(250).animate({opacity:1},500,function(){
 				  contentScroller = null;
 				  contentScroller = new iScroll('scroller');
