@@ -9,7 +9,7 @@
   var map = false;
   var markers = [];
   var storage = window.localStorage;
-  var user = null;
+  var user = storage.getItem('user');
   var types = null;
 
   function onDeviceReady(){

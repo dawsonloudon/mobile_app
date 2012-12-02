@@ -36,8 +36,10 @@ function initializeMap(state){
 }
 
 function relocate(state){
+  console.log('in');
   if(!state){var state = false;}
   var onSuccess = function(position) {
+    console.log(position);
     updatecenter(position.coords.latitude,position.coords.longitude,state);
   }
   var onError = function(error) {
@@ -48,6 +50,7 @@ function relocate(state){
 }
 
 function updatecenter(lat,lng,state){
+  console.log('here');
   storage.setItem('lat',lat);
   storage.setItem('lng',lng);
   initializeMap(state);
