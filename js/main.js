@@ -1,10 +1,4 @@
   function onLoad() {
-    console.log('onload');
-    setTimeout('timeout_trigger()', 10000);
-  }
-
-  function timeout_trigger(){
-    console.log('trigger');
     document.addEventListener("deviceready", onDeviceReady, false);
   }
 
@@ -19,6 +13,10 @@
   var types = null;
 
   function onDeviceReady(){
+    setTimeout('timeout_trigger()', 5000);
+  }
+
+  function timeout_trigger(){
     console.log('onDeviceReady');
     platform = device.platform;
     checkConnection();
