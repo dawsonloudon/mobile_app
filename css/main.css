@@ -71,6 +71,8 @@ nav a.selected { font-weight: bold; }
 
 #home, #map, #list, #login, #user { display: none; }
 
+#map_canvas { height: 100%; width: 100%; }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
