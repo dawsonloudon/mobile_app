@@ -1,4 +1,8 @@
   function onLoad() {
+    setTimeout('timeout_trigger()', 10000);
+  }
+
+  function timeout_trigger(){
     document.addEventListener("deviceready", onDeviceReady, false);
   }
 
