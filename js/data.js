@@ -1,4 +1,4 @@
-  var api = function(){
+  api = function(){
 
     this.createUser = function(){
       $.post(apiurl+'/wp-admin/admin-ajax.php?action=register',$('#loginform').serialize(),function(){
