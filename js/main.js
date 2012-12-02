@@ -38,9 +38,9 @@
 	  if(currentPage != page) {
 		  $('.content_container').animate({opacity:0},500,function(){
 			  $('#'+currentPage).html($('.content_container').html());
-			  $('.content_container').removeClass(currentPage);
+			  $('div.content_container').removeClass(currentPage);
 			  currentPage = page;
-			  $('.content_container').html($('#'+page).html()).addClass(page);
+			  $('div.content_container').html($('#'+page).html()).addClass(page);
 			  $('.content_container').delay(250).animate({opacity:1},500,function(){
 			    if(page == 'home'){	  
 			    	$('#loginusername').live('touchstart',function(){
