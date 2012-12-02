@@ -1,5 +1,5 @@
   function onLoad() {
-    setTimeout('timeout_trigger()', 10000);
+    document.addEventListener("deviceready", onDeviceReady, false);
   }
 
   var platform = '';
@@ -13,7 +13,11 @@
   var types = null;
 
   function timeout_trigger(){
-    console.log('ready');
+    console.log('readyagain');
+  }
+
+  function onDeviceReady(){
+    setTimeout('timeout_trigger()', 5000);
   }
 
   $(document).ready(function(){
