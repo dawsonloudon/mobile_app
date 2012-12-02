@@ -67,9 +67,9 @@ article .content_container { position: relative; width: 100%; }
 input { border: 1px solid #972C02; color: #972C02; font: 18px/34px Arial, Helvetica, sans-serif; margin: 0 auto; padding: 6px 17px; }
 
 #noconnection { display: none; }
-#loginbtn { background: transparent url('../img/buttons/submit.png') 0 0 no-repeat; margin: 0 auto; padding: 6px 17px; width: 308px; }
-#createbtn { background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; margin: 0 auto; padding: 6px 17px; width: 308px; }
-#signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; margin: 0 auto; padding: 6px 17px; width: 308px; }
+#loginbtn { background: transparent url('../img/buttons/submit.png') 0 0 no-repeat; border: 0; margin: 0 auto; padding: 6px 17px; width: 308px; }
+#createbtn { background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; border: 0; margin: 0 auto; padding: 6px 17px; width: 308px; }
+#signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; border: 0; margin: 0 auto; padding: 6px 17px; width: 308px; }
 
 .page { display: none; }
 
