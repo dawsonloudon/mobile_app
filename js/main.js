@@ -12,14 +12,14 @@
   var user = null;
   var types = null;
 
-  function onDeviceReady(){
-    setTimeout('timeout_trigger()', 5000);
-  }
-
   function timeout_trigger(){
-    console.log('onDeviceReady');
+    console.log('ready');
     platform = device.platform;
     checkConnection();
+  }
+
+  function onDeviceReady(){
+    setTimeout('timeout_trigger()', 5000);
   }
 
   $(document).ready(function(){
