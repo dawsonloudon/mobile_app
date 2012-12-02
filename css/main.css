@@ -98,10 +98,10 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 #list .header .header_bottom .map_button { float: left; display: block; width: 51px; height: 35px; margin: 5px 0 0; background: transparent url('../img/buttons/map.png') 0 0 no-repeat; }
 #list .header .header_bottom .photo_button { display: block; width: 280px; height: 35px; margin: 0 auto; background: transparent url('../img/buttons/submit-your-photo.png') 0 0 no-repeat; }
 
-#listitems { list-style: none; }
+#listitems { list-style: none; margin: 0; padding: 0; }
 #listitems .item { width: 100%; height: 83px; list-style: none; border-bottom: 1px solid #fff; }
 #listitems .item .image { width: 62px; height: 62px; float: left; }
-#listitems .item .stuff { width: auto; height: 62px; float: right; }
+#listitems .item .stuff { width: 250px; height: 62px; float: right; }
 #listitems .item .stuff .top { width: 100%; height: auto; }
 #listitems .item .stuff .bottom { width: 100%; height: auto; }
 
