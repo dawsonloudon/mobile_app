@@ -13,7 +13,6 @@
   var types = null;
 
   function onDeviceReady(){
-    console.log('onDeviceReady()');
     platform = device.platform;
     checkConnection();
   }
@@ -28,7 +27,6 @@
   });
 
   function changePage(page){
-          console.log('changePage('+page+')');
 	  if(currentPage != page) {
 		  $('.content_container').animate({opacity:0},500,function(){
 			  $('#'+currentPage).html($('.content_container').html());
@@ -127,7 +125,6 @@
   }
 
   function checkUser(){
-    console.log('checkUser()');
     user = storage.getItem('user');
     if(!user){
       changePage('home');
@@ -138,7 +135,6 @@
   }
 
   function noConnection(){
-    console.log('noConnection()');
     $('#loginform').css({'display':'none'});
     $('#noconnection').css({'display':'block'});
     changePage('home');
