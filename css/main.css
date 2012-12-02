@@ -61,8 +61,8 @@ textarea {
    ========================================================================== */
 
 header { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100px; background-color: #000; color: #FFF; text-align: center; }
-article { display: block; position: absolute; top: 20px; left: 0; background-color: #FFF; }
-article .content_container { position: absolute; top: 0; left: 0; }
+article { display: block; position: absolute; top: 100px; left: 0; background-color: #FFF; color: #000; }
+article .content_container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 article .content_container .content_loading_container { position: absolute; top: 0; }
 footer { display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background-color: #000; }
 nav { position: absolute; bottom: 0; left: 0; height: 50px; }
