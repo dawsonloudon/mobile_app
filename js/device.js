@@ -1,6 +1,6 @@
 /*check data connection // checkdataversion if connected*/
 function checkConnection(){
-  console.log('checkConnection()');
+  console.log('checkConnection');
   var networkState = navigator.network.connection.type;
   var states = {};
   states[Connection.UNKNOWN]  = false;

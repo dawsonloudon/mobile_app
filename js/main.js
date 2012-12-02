@@ -1,8 +1,10 @@
   function onLoad() {
+    console.log('onload');
     setTimeout('timeout_trigger()', 10000);
   }
 
   function timeout_trigger(){
+    console.log('trigger');
     document.addEventListener("deviceready", onDeviceReady, false);
   }
 
@@ -17,7 +19,7 @@
   var types = null;
 
   function onDeviceReady(){
-    console.log('onDeviceReady()');
+    console.log('onDeviceReady');
     platform = device.platform;
     checkConnection();
   }
@@ -131,7 +133,7 @@
   }
 
   function checkUser(){
-    console.log('checkUser()');
+    console.log('checkUser');
     user = storage.getItem('user');
     if(!user){
       changePage('home');
@@ -142,7 +144,7 @@
   }
 
   function noConnection(){
-    console.log('noConnection()');
+    console.log('noConnection');
     $('#loginform').css({'display':'none'});
     $('#noconnection').css({'display':'block'});
     changePage('home');
