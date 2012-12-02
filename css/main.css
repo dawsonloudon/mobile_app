@@ -72,10 +72,10 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 #createbtn { display: block; background: transparent url('../img/buttons/create-an-account.png') 0 0 no-repeat; border: 0; margin: 6px 17px; width: 308px; height: 35px; }
 #signupbtn { background: transparent url('../img/buttons/sign-up.png') 0 0 no-repeat; border: 0; margin: 6px 17px; width: 308px; height: 35px; }
 
-.page { display: block; opacity: 0; }
+.page { position: relative; display: none; opacity: 0; }
 
-#home { position: relative; width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
-#signupform { position: relative; width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
+#home { width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
+#signupform { width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
 
 #map_canvas { height: 100%; width: 100%; }
 

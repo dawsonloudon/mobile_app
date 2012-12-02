@@ -27,7 +27,7 @@
     console.log(page);
     if(currentPage == ''){
         currentPage = page;
-	$('#'+page).delay(250).animate({opacity:1},500,function(){
+	$('#'+page).css({'display':'block'}).animate({opacity:1},500,function(){
           if(page == 'home'){
             $('#loginbtn').live('touchstart',function(){
               authUser();
@@ -47,8 +47,9 @@
     }
     else if(currentPage != page){
       $('#'+currentPage).animate({opacity:0},500,function(){
+        $('#'+currentPage).css({'display':'none'});
         currentPage = page;
-        $('#'+page).delay(250).animate({opacity:1},500,function(){
+        $('#'+page).delay(250).css({'display':'block'}).animate({opacity:1},500,function(){
           if(page == 'home'){
             $('#loginbtn').live('touchstart',function(){
               authUser();
