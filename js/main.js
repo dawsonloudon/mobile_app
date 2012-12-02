@@ -44,21 +44,21 @@
 			  $('.content_container').delay(250).animate({opacity:1},500,function(){
 			    if(page == 'home'){	  
 			    	$('#loginusername').focus(function(){
-					if($(this).value() == 'username'){
-						$(this).value('');
+					if($(this).val() == 'username'){
+						$(this).val('');
 						$(this).blur(function(){
-							if($(this).value() == ''){
- 								$(this).value('username');
+							if($(this).val() == ''){
+ 								$(this).val('username');
 							}
 						});
       					}
     				});
     			    	$('#loginpassword').focus(function(){
-     	 				if($(this).value() == 'password'){
-        					$(this).value('');
+     	 				if($(this).val() == 'password'){
+        					$(this).val('');
         					$(this).blur(function(){
-          						if($(this).value() == ''){
-            							$(this).value('password');
+          						if($(this).val() == ''){
+            							$(this).val('password');
           						}
         					});
       					}
@@ -66,51 +66,51 @@
 			    }
 			    else if(page == 'signupform'){
 			    	$('#signupusername').focus(function(){
-					if($(this).value() == 'Enter A Username'){
-						$(this).value('');
+					if($(this).val() == 'Enter A Username'){
+						$(this).val('');
 						$(this).blur(function(){
-							if($(this).value() == ''){
- 								$(this).value('Enter A Username');
+							if($(this).val() == ''){
+ 								$(this).val('Enter A Username');
 							}
 						});
       					}
     				});
 			    	$('#signupemail1').focus(function(){
-					if($(this).value() == 'Enter Your Email'){
-						$(this).value('');
+					if($(this).val() == 'Enter Your Email'){
+						$(this).val('');
 						$(this).blur(function(){
-							if($(this).value() == ''){
- 								$(this).value('Enter Your Email');
+							if($(this).val() == ''){
+ 								$(this).val('Enter Your Email');
 							}
 						});
       					}
     				});
 			    	$('#signupemail2').focus(function(){
-					if($(this).value() == 'Confirm Your Email'){
-						$(this).value('');
+					if($(this).val() == 'Confirm Your Email'){
+						$(this).val('');
 						$(this).blur(function(){
-							if($(this).value() == ''){
- 								$(this).value('Confirm Your Email');
+							if($(this).val() == ''){
+ 								$(this).val('Confirm Your Email');
 							}
 						});
       					}
     				});
 			    	$('#password').focus(function(){
-					if($(this).value() == 'Enter Your Password'){
-						$(this).value('');
+					if($(this).val() == 'Enter Your Password'){
+						$(this).val('');
 						$(this).blur(function(){
-							if($(this).value() == ''){
- 								$(this).value('Enter Your Password');
+							if($(this).val() == ''){
+ 								$(this).val('Enter Your Password');
 							}
 						});
       					}
     				});
 			    	$('#password2').focus(function(){
-					if($(this).value() == 'Confirm Your Password'){
-						$(this).value('');
+					if($(this).val() == 'Confirm Your Password'){
+						$(this).val('');
 						$(this).blur(function(){
-							if($(this).value() == ''){
- 								$(this).value('Confirm Your Password');
+							if($(this).val() == ''){
+ 								$(this).val('Confirm Your Password');
 							}
 						});
       					}
