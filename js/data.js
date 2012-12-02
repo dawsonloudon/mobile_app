@@ -5,7 +5,8 @@
       url: uri,
       data: $('#signupform').serialize(),
       success: function(data){
-        console.log(data)
+        console.log(data);
+        storage.setItem('user',data);
       },
       dataType: 'JSON'
     });
@@ -18,7 +19,8 @@
       url: uri,
       data: $('#loginform').serialize(),
       success: function(data){
-        console.log(data)
+        console.log(data);
+        storage.setItem('user',data);
       },
       dataType: 'JSON'
     });
@@ -31,7 +33,9 @@
       url: uri,
       data: false,
       success: function(data){
-        console.log(data)
+        console.log(data);
+        storage.setItem('types',data);
+        types = storage.getItem('types');
       },
       dataType: 'JSON'
     });

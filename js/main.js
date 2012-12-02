@@ -1,8 +1,21 @@
+  function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+  }
+
+  var platform = '';
   var apiurl = 'http://ediblereno.sterlinghamilton.com';
   var currentPage = '';
   var contentScroller;
   var map = false;
   var markers = [];
+  var storage = window.localStorage;
+  var user = storage.getItem('user');
+  var types = storage.getItem('types');
+
+  function onDeviceReady(){
+    platform = device.platform;
+    checkConnection();
+  }
 
   $(document).ready(function(){
 	  changePage('home');
@@ -13,7 +26,6 @@
 		  $(this).addClass('selected');
 	  });
     $('#loginbtn').live('touchstart',function(){
-      console.log('touch');
       authUser();
     });
     $('#signupbtn').live('touchstart',function(){
@@ -35,4 +47,13 @@
 			  });
 		  });
 	  }
+  }
+
+  function checkUser(){
+    if(!user){
+      showLogin();
+    }
+    else{
+      changePage('maps');
+    }
   }
