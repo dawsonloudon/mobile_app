@@ -100,8 +100,10 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 
 #listitems { list-style: none; margin: 0; padding: 0; }
 #listitems .item { width: 100%; height: 73px; margin: 5px; list-style: none; border-bottom: 1px solid #fff; }
+#listitems .odd { background-color: #fdaf35; color: #972c02; }
+#listitems .even { background-color: #d65700; color: #fff; }
 #listitems .item .image { width: 62px; height: 62px; float: left; }
-#listitems .item .stuff { width: 250px; height: 62px; float: right; }
+#listitems .item .stuff { width: 240px; height: 62px; float: right; }
 #listitems .item .stuff .top { width: 100%; height: auto; }
 #listitems .item .stuff .top .title { float: left; }
 #listitems .item .stuff .top .distance { float: right; }
