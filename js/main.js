@@ -49,36 +49,6 @@
             $('#signupbtn').live('touchstart',function(){
               createUser();
             });
-            $('#signupusername').focus(function(){
-              if($(this).val() == 'Enter A Username'){
-                $(this).val('');
-                $(this).blur(function(){
-                  if($(this).val() == ''){
-                    $(this).val('Enter A Username');
-                  }
-                });
-              }
-            });
-            $('#signupemail1').focus(function(){
-              if($(this).val() == 'Enter Your Email'){
-                $(this).val('');
-                $(this).blur(function(){
-                  if($(this).val() == ''){
-                    $(this).val('Enter Your Email');
-                  }
-                });
-              }
-            });
-            $('#signupemail2').focus(function(){
-              if($(this).val() == 'Confirm Your Email'){
-                $(this).val('');
-                $(this).blur(function(){
-                  if($(this).val() == ''){
-                    $(this).val('Confirm Your Email');
-                  }
-                });
-              }
-            });
           }
           else if(page == 'map'){
             relocate();
