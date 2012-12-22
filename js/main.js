@@ -32,16 +32,6 @@
             $('#loginbtn').live('touchstart',function(){
               authUser();
             });
-            $('#loginusername').focus(function(){
-              if($(this).val() == 'username'){
-                $(this).val('');
-                $(this).blur(function(){
-                  if($(this).val() == ''){
-                    $(this).val('username');
-                  }
-                });
-              }
-            });
           }
         });
     }
@@ -53,16 +43,6 @@
           if(page == 'home'){
             $('#loginbtn').live('touchstart',function(){
               authUser();
-            });
-            $('#loginusername').focus(function(){
-              if($(this).val() == 'username'){
-                $(this).val('');
-                $(this).blur(function(){
-                  if($(this).val() == ''){
-                    $(this).val('username');
-                  }
-                });
-              }
             });
           }
           else if(page == 'signupform'){
