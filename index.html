@@ -1,189 +1,296 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>HarvestReno</title>
-        <meta name="description" content="mobile app">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript" src="phonegap.js"></script>
-    </head>
-    <body onload="onLoad()">
-	<div id="container">
-		<div id="home" class="page">
-			<div class="padd167"></div>
-			<form name="login" id="loginform">
-				<div>
-					<input type="text" name="username" id="loginusername" value="" placeholder="username" />
-				</div>
-				<div>
-					<input type="password" name="password" id="loginpassword" value="" placeholder="password" />
-				</div>
-				<div>
-					<input type="button" name="loginbtn" id="loginbtn" value="" />
-				</div>
-				<div>
-					<a id="createbtn" class="nav" data-page="signupform"></a>
-				</div>
-			</form>
-			<h2 id="noconnection">This app requires an internet connection</h2>
-		</div>
-        	<div id="signupform" class="page">
-			<div class="padd157"></div>
-			<form name="signup">
-				<div>
-					<input type="text" name="username" id="signupusername" value="" placeholder="Enter A Username" />
-				</div>
-				<div>
-					<input type="text" name="email" id="signupemail1" value="" placeholder="Enter Your Email" />
-				</div>
-				<div>
-					<input type="text" name="email2" id="signupemail2" value="" placeholder="Confirm Your Email" />
-				</div>
-				<div>
-					<input type="password" name="password" id="signuppassword1" value="" placeholder="Enter Your Password" />
-				</div>
-				<div>
-					<input type="password" name="password2" id="signuppassword2" value="" placeholder="Confirm Your Password" />
-				</div>
-				<div>
-					<input type="button" name="signupbtn" id="signupbtn" value="" />
-				</div>
-			</form>
-        	</div>
-		<div id="map" class="page">
-			<div class="header">
-				<div class="header_logo_bg">
-					<div class="header_logo"></div>
-				</div>
-				<div class="header_bottom">
-					<input type="text" name="search" class="search" />
-					<a class="nav list_button" data-page="list"></a>
-					<a class="nav map_button" data-page="map"></a>
-					<div class="clearfix"></div>
-					<a class="nav photo_button" data-page="camera"></a>
-				</div>
-			</div>
-			<div id="map_canvas"></div>
-		</div>
-
-	<div id="list" class="page">
-	  <div class="header">
-            <div class="header_logo_bg">
-              <div class="header_logo"></div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HarvestReno</title>
+    <meta name="description" content="mobile app">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+  </head>
+  <body onload="onLoad()">
+    <div id="container">
+<!-- START LOGIN PAGE -->
+      <div id="home" class="page">
+        <div class="padd167"></div>
+        <form name="login" id="loginform">
+          <div>
+            <input type="text" name="username" id="loginusername" value="" placeholder="username" />
+          </div>
+          <div>
+            <input type="password" name="password" id="loginpassword" value="" placeholder="password" />
+          </div>
+          <div>
+            <input type="button" name="loginbtn" id="loginbtn" value="" />
+          </div>
+          <div>
+            <a id="createbtn" class="nav" data-page="signupform"></a>
+          </div>
+        </form>
+        <h2 id="noconnection">This app requires an internet connection</h2>
+      </div>
+<!-- END LOGIN PAGE -->
+<!-- START SIGNUP PAGE -->
+      <div id="signupform" class="page">
+        <div class="padd157"></div>
+        <form name="signup">
+          <div>
+            <input type="text" name="username" id="signupusername" value="" placeholder="Enter A Username" />
+          </div>
+          <div>
+            <input type="text" name="email" id="signupemail1" value="" placeholder="Enter Your Email" />
+          </div>
+          <div>
+            <input type="text" name="email2" id="signupemail2" value="" placeholder="Confirm Your Email" />
+          </div>
+          <div>
+            <input type="password" name="password" id="signuppassword1" value="" placeholder="Enter Your Password" />
+          </div>
+          <div>
+            <input type="password" name="password2" id="signuppassword2" value="" placeholder="Confirm Your Password" />
+          </div>
+          <div>
+            <input type="button" name="signupbtn" id="signupbtn" value="" />
+          </div>
+        </form>
+      </div>
+<!-- END SIGNUP PAGE -->
+<!-- START MAP PAGE -->
+      <div id="map" class="page">
+        <div class="header">
+          <div class="header_logo_bg">
+            <div class="header_logo"></div>
+          </div>
+          <div class="header_bottom">
+            <input type="text" name="search" class="search" />
+            <a class="nav list_button" data-page="list"></a>
+            <a class="nav map_button" data-page="map"></a>
+            <div class="clearfix"></div>
+            <a class="nav photo_button" data-page="camera"></a>
+          </div>
+        </div>
+        <div id="map_canvas"></div>
+      </div>
+<!-- END MAP PAGE -->
+<!-- START LIST PAGE -->
+      <div id="list" class="page">
+        <div class="header">
+          <div class="header_logo_bg">
+            <div class="header_logo"></div>
+          </div>
+          <div class="header_bottom">
+            <input type="text" name="search" class="search" />
+            <a class="nav list_button" data-page="list"></a>
+            <a class="nav map_button" data-page="map"></a>
+            <div class="clearfix"></div>
+            <a class="nav photo_button" data-page="camera"></a>
+          </div>
+        </div>
+        <div id="scroller">
+        <ul id="listitems">
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
             </div>
-            <div class="header_bottom">
-              <input type="text" name="search" class="search" />
-              <a class="nav list_button" data-page="list"></a>
-              <a class="nav map_button" data-page="map"></a>
-              <div class="clearfix"></div>
-              <a class="nav photo_button" data-page="camera"></a>
+          </li>
+          <li class="item even">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
             </div>
-          </div>
-          <div id="scroller">
-          <ul id="listitems">
-            <li class="item odd">
-              <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
-              <div class="stuff">
-                <div class="top">
-                  <div class="title">Title</div>
-                  <div class="distance">1 mi</div>
-                </div>
-                <div style="clear: both;"></div>
-                <div class="bottom">
-                  <div class="desc">This is a test item description for stuff.</div>
-                  <div class="more">&gt;</div>
-                </div>
+          </li>
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
               </div>
-            </li>
-            <li class="item even">
-              <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
-              <div class="stuff">
-                <div class="top">
-                  <div class="title">Title</div>
-                  <div class="distance">1 mi</div>
-                </div>
-                <div style="clear: both;"></div>
-                <div class="bottom">
-                  <div class="desc">This is a test item description for stuff.</div>
-                  <div class="more">&gt;</div>
-                </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
               </div>
-            </li>
-            <li class="item odd">
-              <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
-              <div class="stuff">
-                <div class="top">
-                  <div class="title">Title</div>
-                  <div class="distance">1 mi</div>
-                </div>
-                <div style="clear: both;"></div>
-                <div class="bottom">
-                  <div class="desc">This is a test item description for stuff.</div>
-                  <div class="more">&gt;</div>
-                </div>
+            </div>
+          </li>
+          <li class="item even">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
               </div>
-            </li>
-            <li class="item even">
-              <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
-              <div class="stuff">
-                <div class="top">
-                  <div class="title">Title</div>
-                  <div class="distance">1 mi</div>
-                </div>
-                <div style="clear: both;"></div>
-                <div class="bottom">
-                  <div class="desc">This is a test item description for stuff.</div>
-                  <div class="more">&gt;</div>
-                </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
               </div>
-            </li>
-            <li class="item odd">
-              <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
-              <div class="stuff">
-                <div class="top">
-                  <div class="title">Title</div>
-                  <div class="distance">1 mi</div>
-                </div>
-                <div style="clear: both;"></div>
-                <div class="bottom">
-                  <div class="desc">This is a test item description for stuff.</div>
-                  <div class="more">&gt;</div>
-                </div>
+            </div>
+          </li>
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
               </div>
-            </li>
-            <li class="item even">
-              <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
-              <div class="stuff">
-                <div class="top">
-                  <div class="title">Title</div>
-                  <div class="distance">1 mi</div>
-                </div>
-                <div style="clear: both;"></div>
-                <div class="bottom">
-                  <div class="desc">This is a test item description for stuff.</div>
-                  <div class="more">&gt;</div>
-                </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
               </div>
-            </li>
-          </ul>
-          </div>
-          <div class="footer">
-            <div id="load_more_button"></div>
-          </div>
-	</div>
-		<div id="camera" class="page">
-			Camera
-        	</div>
-	</div>
-        <script src="js/vendor/jquery-1.8.3.min.js"></script>
-        <script src="js/vendor/iscroll-lite.js"></script>
-        <script src="js/device.js"></script>
-        <script src="js/maps.js"></script>
-        <script src="js/data.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+            </div>
+          </li>
+          <li class="item even">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item even">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item even">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item even">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+          <li class="item odd">
+            <div class="image"><img src="img/listing-sample.png" style="width: 62px; height: 62px;" /></div>
+            <div class="stuff">
+              <div class="top">
+                <div class="title">Title</div>
+                <div class="distance">1 mi</div>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="bottom">
+                <div class="desc">This is a test item description for stuff.</div>
+                <div class="more">&gt;</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+        <div class="footer">
+          <div id="load_more_button"></div>
+        </div>
+      </div>
+<!-- END LIST PAGE -->
+<!-- START ADD LOCATION PAGE -->
+      <div id="camera" class="page">
+        Camera
+      </div>
+<!-- END ADD LOCATION PAGE -->
+    </div>
+    <script src="js/vendor/jquery-1.8.3.min.js"></script>
+    <script src="js/vendor/iscroll-lite.js"></script>
+    <script src="js/device.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
