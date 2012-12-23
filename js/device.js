@@ -23,3 +23,29 @@ function checkConnection(){
 function alertCallback(){
   //null
 }
+
+  function onPhotoDataSuccess(imageData) {
+    var smallImage = document.getElementById('camperphoto');
+    smallImage.style.display = 'block';
+    smallImage.src = "data:image/jpeg;base64," + imageData;
+  }
+
+  function onFail(message) {
+    alert('Failed because: ' + message);
+  }
+
+  function capturePhoto() {
+    // Take picture using device camera and retrieve image as base64-encoded string
+    navigator.camera.getPicture(onPhotoDataSuccess,
+                                onFail,
+                                {
+                                  quality: 50,
+                                  destinationType: destinationType.DATA_URL,
+                                  sourceType : Camera.PictureSourceType.CAMERA,
+                                  encodingType: Camera.EncodingType.JPEG,
+                                  targetWidth: 640,
+                                  targetHeight: 480,
+                                  saveToPhotoAlbum: false
+                                }
+    );
+  }
