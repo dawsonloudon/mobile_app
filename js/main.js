@@ -24,6 +24,9 @@
     $('#locpic').live('click',function(){
       capturePhoto();
     });
+    $('#testing').live('touchend',function(){
+      capturePhoto();
+    });
   });
 
   function changePage(page){
