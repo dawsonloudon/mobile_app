@@ -38,12 +38,12 @@ function capturePhoto() {
   navigator.camera.getPicture(onPhotoDataSuccess,
                               onFail,
                               {
-                                quality: 50,
+                                quality: 40,
                                 destinationType: destinationType.DATA_URL,
                                 sourceType : Camera.PictureSourceType.CAMERA,
                                 encodingType: Camera.EncodingType.JPEG,
-                                targetWidth: 640,
-                                targetHeight: 480,
+                                targetWidth: 320,
+                                targetHeight: 240,
                                 saveToPhotoAlbum: false
                               }
   );
