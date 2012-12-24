@@ -21,6 +21,9 @@
     $('.nav').live('touchstart',function(){
       changePage($(this).attr('data-page'));
     });
+    $('#locpic').live('touchend',function(){
+      capturePhoto();
+    });
   });
 
   function changePage(page){

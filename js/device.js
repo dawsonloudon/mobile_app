@@ -25,8 +25,7 @@ function alertCallback(){
 }
 
   function onPhotoDataSuccess(imageData) {
-    var smallImage = document.getElementById('camperphoto');
-    smallImage.style.display = 'block';
+    var smallImage = document.getElementById('locpic');
     smallImage.src = "data:image/jpeg;base64," + imageData;
   }
 

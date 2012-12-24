@@ -77,8 +77,8 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 
 .page { position: relative; display: none; opacity: 0; }
 
-#home { width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; }
-#signupform { width: 320px; height: 100%; min-height: 100%; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; }
+#home { width: 320px; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; height: 100%; margin: 0 auto; }
+#signupform { width: 320px; height: 100%; min-height: 100%; background: #FBF0A6 url('../img/logo-home.png') center 52px no-repeat; margin: 0 auto; }
 
 #map { width: 100%; height: 100%; }
 #map .header { width: 100%; height: 162px; }
@@ -116,9 +116,11 @@ input { border: 1px solid #972C02; color: #972C02; font: 18px/33px Arial, Helvet
 #listitems .item .stuff .bottom .more {  font-size: 20px; width: 20px; height: auto; float: right; }
 
 #addlocation { width: 100%; height: 100%; }
-#addlocation .header { width: 100%; height: 162px; }
+#addlocation .header { width: 100%; height: 75px; }
 #addlocation .header .header_logo_bg { width: 100%; height: 64px; background-color: #FBF0A6; }
 #addlocation .header .header_logo { width: 268px; height: 37px; background: transparent url('../img/logo-list.png') 0 0 no-repeat; margin: 13px auto 14px; }
+#addlocation #locpicarea { width: 320px; height: 240px; margin: 0 auto; }
+#addlocation #locpicarea #locpic { width: 320px; height: 240px; }
 
 /* ==========================================================================
    Media Queries
