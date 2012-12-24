@@ -15,6 +15,7 @@
   function onDeviceReady(){
     platform = device.platform;
     checkConnection();
+    alert('is working?');
   }
 
   $(document).ready(function(){
@@ -22,9 +23,11 @@
       changePage($(this).attr('data-page'));
     });
     $('#locpic').live('click',function(){
+      alert('maybe?');
       capturePhoto();
     });
     $('#testing').live('touchend',function(){
+      alert('kinda?');
       capturePhoto();
     });
   });
